@@ -1,0 +1,101 @@
+/* Sidebar container - Custom dark theme */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100%;
+  background-color: #1e1e1e; /* Sidebar background */
+  color: #e0e0e0; /* Sidebar text color */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.6);
+  overflow-y: auto;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Show the sidebar */
+.sidebar.open {
+  right: 0;
+}
+
+/* Sidebar header */
+.sidebar-header {
+  background-color: #272727; /* Slightly darker for the header */
+  color: #e0e0e0;
+  padding: 15px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333; /* Subtle border */
+}
+
+/* Close button */
+.close-sidebar {
+  background: none;
+  border: none;
+  color: #e0e0e0;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Member list */
+.member-list {
+  padding: 20px;
+  flex-grow: 1; /* Takes up the remaining space */
+  overflow-y: auto;
+}
+
+.member-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #333; /* Separator line */
+}
+
+.member-item span {
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+/* Member actions */
+.member-actions button {
+  margin-left: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.member-actions .remove-button {
+  background-color: #d32f2f; /* Red for Remove */
+  color: #fff;
+}
+
+.member-actions .remove-button:hover {
+  background-color: #b71c1c; /* Darker red */
+}
+
+.member-actions .accept-button {
+  background-color: #388e3c; /* Green for Accept */
+  color: #fff;
+}
+
+.member-actions .accept-button:hover {
+  background-color: #2e7d32; /* Darker green */
+}
+
+.member-actions .reject-button {
+  background-color: #fbc02d; /* Yellow for Reject */
+  color: #121212;
+}
+
+.member-actions .reject-button:hover {
+  background-color: #f9a825; /* Darker yellow */
+}

@@ -1,0 +1,17 @@
+.container {
+  @apply absolute left-1/2 top-4 px-2 py-1.5 flex gap-1 rounded-xl glass border-white/20 dark:border-white/10 z-50;
+  transform: translateX(-50%);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.15);
+}
+
+.toolItem {
+  @apply flex justify-center items-center text-lg p-2.5 text-neutral-600 dark:text-neutral-300 rounded-lg cursor-pointer transition-all duration-200;
+}
+
+.toolItem:hover {
+  @apply bg-neutral-100 dark:bg-neutral-800 text-brand-600 dark:text-brand-400 scale-105;
+}
+
+.toolItem.active {
+  @apply bg-brand-50 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 font-bold shadow-sm ring-1 ring-brand-200 dark:ring-brand-800/50;
+}

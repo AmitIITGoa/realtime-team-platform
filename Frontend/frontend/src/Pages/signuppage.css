@@ -1,0 +1,144 @@
+/* .signuppage {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 16px;
+}
+
+.container {
+    width: 100%;
+    min-width: 430px;
+    background-color: black;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    justify-content: flex-start;
+    justify-content: space-around;
+} */
+
+.signuppage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: black; /* Light background */
+    color: white;
+    padding: 16px;
+}
+
+.container {
+    background: black;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Limiting width */
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.title {
+    font-size: 1.875rem;
+    /* 30px */
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.error {
+    background-color: #ffe4e4;
+    color: #ff0000;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    margin-bottom: 16px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+label {
+    font-size: 0.875rem;
+    color: #d1d1d1;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #262626;
+    color: white;
+    outline: none;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #888;
+    box-shadow: 0 0 4px #666;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: white;
+}
+
+.link {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e5e5e5;
+}
+
+.text-muted {
+    font-size: 0.875rem;
+    color: #b3b3b3;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.text-muted a {
+    color: #b3b3b3;
+    text-decoration: underline;
+}
